@@ -57,6 +57,9 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 sudo apt-get install -y ruby
 sudo gem install tmuxinator
 
+# install silversearcher-ag, the killer code grep
+sudo apt-get install -y silversearcher-ag
+
 # git pull and install dotfiles as well
 cd
 if [ -d ./dotfiles/ ]; then
