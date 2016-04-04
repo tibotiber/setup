@@ -21,27 +21,12 @@ sudo apt-get install -y g++
 sudo apt-get install -y zsh
 sudo chsh -s $(which zsh) $USER
 
-# install fasd for 'j' jump in zsh
-wget -qO- https://codeload.github.com/clvv/fasd/legacy.zip/1.0.1 > fasd.zip
-unzip fasd.zip
-cd clvv-fasd-4822024
-sudo make install
-cd
-rm -rf clvv-fasd-4822024
-rm -f fasd.zip
-
-# install node.js via package manager (npm is included in chris lea's nodejs package)
-# https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
-sudo add-apt-repository -y ppa:chris-lea/node.js
-sudo apt-get -qq update
-sudo apt-get install -y nodejs
-
 # install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
 # install node version manager to switch versions easily
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.12.1/install.sh | sh
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | sh
 
 # install jshint, jscs and js-beautify
 sudo npm install -g jshint
