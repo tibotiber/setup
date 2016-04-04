@@ -43,15 +43,15 @@ sudo apt-get install -y rlwrap
 # install node version manager to switch versions easily
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.12.1/install.sh | sh
 
-# install jshint and js-beautify
+# install jshint, jscs and js-beautify
 sudo npm install -g jshint
+sudo npm install -g jscs
 sudo npm install -g js-beautify
 
 # install emacs24
-# https://launchpad.net/~cassou/+archive/emacs
-sudo add-apt-repository -y ppa:cassou/emacs
+sudo add-apt-repository -y ppa:ubuntu-elisp/ppa
 sudo apt-get -qq update
-sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
+sudo apt-get install -y emacs-snapshot emacs-snapshot-el
 
 # install tmuxinator (help for setting tmux sessions)
 sudo apt-get install -y ruby
