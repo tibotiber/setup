@@ -17,10 +17,6 @@ zsh
 wget -qO- https://github.com/tibotiber/setup/raw/master/configure_zsh.sh | zsh
 # you can now exit and reconnect as <your_username> with the same key
 ```
-Run the following for ubismart only
-```sh
-wget -qO- https://github.com/tibotiber/setup/raw/master/ubi_setup.sh | sh
-```
 
 ###Notes: 
 * You will probably need to exit and reconnect to apply the new shell profile.
