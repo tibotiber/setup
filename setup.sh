@@ -32,6 +32,7 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | 
 sudo npm install -g jshint
 sudo npm install -g jscs
 sudo npm install -g js-beautify
+sudo npm install -g pm2
 
 # install emacs24
 sudo add-apt-repository -y ppa:ubuntu-elisp/ppa
