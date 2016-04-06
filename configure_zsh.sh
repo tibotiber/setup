@@ -7,6 +7,9 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
     ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
+pm2 completion install
+source ~/.zshrc
+
 # start zsh ssh agent
 exec ssh-agent zsh
 
