@@ -27,8 +27,10 @@ sudo apt-get install -y rlwrap
 
 # install node version manager to switch versions easily
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | sh
+source ~/.bashrc
+nvm install stable
 
-# install jshint, jscs and js-beautify
+# NPM: install jshint, jscs, js-beautify, pm2
 sudo npm install -g jshint
 sudo npm install -g jscs
 sudo npm install -g js-beautify
