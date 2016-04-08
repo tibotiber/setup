@@ -7,12 +7,12 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
     ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-# pm2 completion
-pm2 completion install
-source ~/.zshrc
-
 # add nvm to zshrc (it won't install again)
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | sh
+source ~/.zshrc
+
+# pm2 completion
+pm2 completion install
 source ~/.zshrc
 
 # start zsh ssh agent
