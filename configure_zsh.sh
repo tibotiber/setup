@@ -13,6 +13,7 @@ source ~/.zshrc
 
 # add nvm to zshrc (it won't install again)
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | sh
+source ~/.zshrc
 
 # start zsh ssh agent
 exec ssh-agent zsh
