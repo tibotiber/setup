@@ -17,11 +17,19 @@ zsh
 wget -qO- https://github.com/tibotiber/setup/raw/master/configure_zsh.sh | zsh
 # IMPORTANT: follow instructions in terminal
 # you can now exit and reconnect as <your_username> with the same key
-# only after reconnecting, you can install node if needed
-wget -qO- https://github.com/tibotiber/setup/raw/master/install_node.sh | zsh -s <version> # version defaults to stable
 ```
 
-###Notes: 
+### Installing Node, Nginx
+
+```
+# only after reconnecting, you can install node if needed
+wget -qO- https://github.com/tibotiber/setup/raw/master/install_node.sh | zsh -s <version> # version defaults to stable
+
+# or nginx
+wget -qO- https://github.com/tibotiber/setup/raw/master/install_nginx.sh | sh
+```
+
+### Notes: 
 * You will probably need to exit and reconnect to apply the new shell profile.
 * It may also be necessary to install flycheck from emacs package manager.
 
