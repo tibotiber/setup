@@ -1,6 +1,6 @@
 setup.git
 =========
-Download and run this on a new Digital Ocean droplet running Ubuntu 14.04 LTS to
+Download and run this on a new Digital Ocean droplet running Ubuntu 16.04 LTS to
 configure both the machine and your individual development environment as
 follows:
 
