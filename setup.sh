@@ -31,10 +31,10 @@ source ~/.bashrc
 nvm install stable
 
 # NPM: install jshint, jscs, js-beautify, pm2
-sudo npm install -g jshint
-sudo npm install -g jscs
-sudo npm install -g js-beautify
-sudo npm install -g pm2
+npm install -g jshint
+npm install -g jscs
+npm install -g js-beautify
+npm install -g pm2
 
 # install emacs24
 sudo add-apt-repository -y ppa:ubuntu-elisp/ppa
