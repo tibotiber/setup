@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 # install node using nvm and utility npm modules, call this script from zsh
 
 VERSION=${1-stable}
