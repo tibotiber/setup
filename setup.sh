@@ -25,17 +25,6 @@ sudo chsh -s $(which zsh) $USER
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
-# install node version manager to switch versions easily
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | sh
-source ~/.bashrc
-nvm install stable
-
-# NPM: install jshint, jscs, js-beautify, pm2
-npm install -g jshint
-npm install -g jscs
-npm install -g js-beautify
-npm install -g pm2
-
 # install emacs24
 sudo add-apt-repository -y ppa:ubuntu-elisp/ppa
 sudo apt-get -qq update

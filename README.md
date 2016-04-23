@@ -15,6 +15,8 @@ cd
 wget -qO- https://github.com/tibotiber/setup/raw/master/setup.sh | sh -s <your_username>
 zsh
 wget -qO- https://github.com/tibotiber/setup/raw/master/configure_zsh.sh | zsh
+# IMPORTANT: follow instructions in terminal
+wget -qO- https://github.com/tibotiber/setup/raw/master/install_node.sh | sh -s <version> # version defaults to stable
 # you can now exit and reconnect as <your_username> with the same key
 ```
 
