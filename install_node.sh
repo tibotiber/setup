@@ -8,8 +8,8 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | 
 source ~/.zshrc
 nvm install $VERSION
 
-# NPM: install jshint, jscs, js-beautify, pm2
-npm install -g jshint
+# NPM: install eslint, jscs, js-beautify, pm2
+npm install -g eslint
 npm install -g jscs
 npm install -g js-beautify
 npm install -g pm2
