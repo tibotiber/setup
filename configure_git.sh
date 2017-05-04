@@ -1,16 +1,5 @@
 #!/bin/zsh
-# zsh config and dotfiles
-setopt EXTENDED_GLOB
-ln -s ~/dotfiles/.zprezto/ ~/
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-    rm -f "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
 
-# start zsh ssh agent
-exec ssh-agent zsh
-
-# config for efficient git
 git config --global user.name "Thibaut Tiberghien"
 git config --global user.email "thibaut@planecq.com"
 ssh-keygen -t rsa -N "" -C "thibaut@planecq.com" -f ~/.ssh/id_rsa

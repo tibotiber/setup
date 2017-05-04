@@ -21,11 +21,7 @@ sudo apt-get install -y g++
 sudo apt-get install -y zsh
 sudo chsh -s $(which zsh) $USER
 
-# install rlwrap to provide libreadline features with node
-# See: http://nodejs.org/api/repl.html#repl_repl
-sudo apt-get install -y rlwrap
-
-# install emacs24
+# install emacs
 sudo add-apt-repository -y ppa:ubuntu-elisp/ppa
 sudo apt-get -qq update
 sudo apt-get install -y emacs-snapshot emacs-snapshot-el
@@ -37,18 +33,12 @@ sudo gem install tmuxinator
 # install silversearcher-ag, the killer code grep
 sudo apt-get install -y silversearcher-ag
 
-# git pull and install dotfiles as well
+# clone and install dotfiles
 cd
 if [ -d ./dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
-if [ -d .emacs.d/ ]; then
-    mv .emacs.d .emacs.d~
-fi
 git clone https://github.com/tibotiber/dotfiles.git
-cd dotfiles/
-git submodule update --init --recursive
-cd
 ln -sb dotfiles/.tmux.conf .
-ln -sb dotfiles/.tmuxinator .
-ln -sf dotfiles/.emacs.d .
+ln -sb dotfiles/.zshrc .
+ln -sb dotfiles/.zshenv .
