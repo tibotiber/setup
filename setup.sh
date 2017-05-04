@@ -42,3 +42,4 @@ git clone https://github.com/tibotiber/dotfiles.git
 ln -sb dotfiles/.tmux.conf .
 ln -sb dotfiles/.zshrc .
 ln -sb dotfiles/.zshenv .
+ln -sb dotfiles/.antigenrc .
